@@ -1,0 +1,19 @@
+h1 {
+    font-family: tahoma;
+    font-variant: small-caps;
+}
+
+p {
+    font-family: verdana;
+    font-size: 12pt;
+}
+
+blockquote {
+    font-family: courier new;
+    font-size: 11pt;
+    font-style: italic;
+}
+
+address {
+    font-weight: bold;
+}
