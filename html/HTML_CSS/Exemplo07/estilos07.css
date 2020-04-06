@@ -1,0 +1,16 @@
+body {
+    font-family: verdana;
+    background-image: url('stars.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+h1 {
+    color: silver;
+}
+
+p {
+    color: white;
+}
