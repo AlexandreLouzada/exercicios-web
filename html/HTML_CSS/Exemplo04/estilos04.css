@@ -1,0 +1,11 @@
+body {
+    font-family: verdana;
+}
+
+ul {
+    list-style-type: square;
+}
+
+ol {
+    list-style-type: lower-alpha;
+}
