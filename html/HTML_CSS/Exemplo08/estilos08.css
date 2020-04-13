@@ -1,0 +1,15 @@
+body {
+    background-color: silver;
+}
+
+h1 {
+    font-family: arial;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+p {
+    font-size: 12;
+    font-family: verdana;
+    color: blue;
+}
