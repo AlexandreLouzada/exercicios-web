@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Exemplo 7</title>
+</head>
+
+<body>
+    <script>
+        var raio = window.prompt("Digite o valor do raio em mm:", "");
+        var altura = window.prompt("Digite o valor da altura em mm:", "");
+
+        raio = Number(raio);
+        altura = Number(altura);
+
+        raio = raio / 10;
+        altura = altura / 10;
+
+        var volume = Math.PI * Math.pow(raio, 2) * altura;
+
+        document.write("O volume da lata é " + volume + "cm<sup>3</sup>");
+    </script>
+</body>
+
+</html>
