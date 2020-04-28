@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Exemplo 10</title>
+</head>
+
+<body>
+    <script>
+        var nd = window.prompt("Digite um número entre 1 e 5:", "");
+        var ns = Math.round(Math.random() * 4 + 1);
+
+        nd = Number(nd);
+
+        if (nd == ns)
+            document.write("Parabéns, você acertou!");
+        else
+            document.write("Você errou, o número sorteado foi " + ns + "!");
+    </script>
+</body>
+
+</html>
