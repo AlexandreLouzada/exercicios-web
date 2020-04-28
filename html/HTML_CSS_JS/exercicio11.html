@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Exemplo 11</title>
+    <script>
+        function ordenar(a, b) {
+            a = Number(a);
+            b = Number(b);
+
+            if (a > b) {
+                document.getElementById('n1').value = b;
+                document.getElementById('n2').value = a;
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <form id="f1" method="post" action="">
+        <p><label for="n1">1º Número:</label>
+            <input type="text" id="n1" /></p>
+
+        <p><label for="n2">2º Número:</label>
+            <input type="text" id="n2" /></p>
+
+        <p><input type="button" value="Ordenar" onclick="ordenar(document.getElementById('n1').value, document.getElementById('n2').value);"></p>
+    </form>
+</body>
+
+</html>
