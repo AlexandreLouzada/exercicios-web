@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Exemplo 26</title>
+</head>
+
+<body>
+    <script>
+        var nome = window.prompt("Digite o seu nome:", "");
+        var qtd = nome.length;
+        var letra = nome.charAt(qtd - 1);
+
+        if (letra == "o")
+            window.confirm("Você é homem?");
+        else if (letra == "a")
+            window.confirm("Você é mulher?");
+        else
+            window.prompt("Você é homem ou mulher?", "");
+    </script>
+</body>
+
+</html>
