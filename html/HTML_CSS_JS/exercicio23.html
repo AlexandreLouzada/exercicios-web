@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Exemplo 23</title>
+</head>
+
+<body>
+    <script>
+        var data = new Date();
+
+        var dias = data.getDay();
+        var diam = data.getDate();
+        var mes = data.getMonth();
+        var ano = data.getYear();
+
+        var diaext, mesext;
+
+        switch (dias) {
+            case 0:
+                diaext = "Domingo";
+                break;
+            case 1:
+                diaext = "Segunda-feira";
+                break;
+            case 2:
+                diaext = "Terça-feira";
+                break;
+            case 3:
+                diaext = "Quarta-feira";
+                break;
+            case 4:
+                diaext = "Quinta-feira";
+                break;
+            case 5:
+                diaext = "Sexta-feira";
+                break;
+            case 6:
+                diaext = "Sábado";
+        }
+
+        switch (mes) {
+            case 0:
+                mesext = "janeiro";
+                break;
+            case 1:
+                mesext = "fevereiro";
+                break;
+            case 2:
+                mesext = "março";
+                break;
+            case 3:
+                mesext = "abril";
+                break;
+            case 4:
+                mesext = "maio";
+                break;
+            case 5:
+                mesext = "junho";
+                break;
+            case 6:
+                mesext = "julho";
+                break;
+            case 7:
+                mesext = "agosto";
+                break;
+            case 8:
+                mesext = "setembro";
+                break;
+            case 9:
+                mesext = "outubro";
+                break;
+            case 10:
+                mesext = "novembro";
+                break;
+            case 11:
+                mesext = "dezembro";
+        }
+
+        document.write(diaext + ", " + diam + " de " + mesext + " de " + ano);
+    </script>
+</body>
+
+</html>
