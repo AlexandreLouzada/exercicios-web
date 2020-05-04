@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Exemplo 29</title>
+</head>
+
+<body>
+    <script>
+        var n = new Array();
+        var i = 0;
+
+        n[i] = window.prompt("Digite um número:", "");
+
+        while (n[i] != 0) {
+            i++;
+            n[i] = window.prompt("Digite um número:", "");
+        }
+
+
+        n.sort();
+
+        for (i = 0; i < n.length; i++)
+            document.write(n[i] + "<br />");
+    </script>
+</body>
+
+</html>
