@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Exemplo 16</title>
+</head>
+
+<body>
+    <script>
+        var i = 1;
+        window.alert("Execução " + i);
+        var resposta = window.confirm("Deseja continuar?");
+
+        while (resposta == true) {
+            i++;
+            window.alert("Execução " + i);
+            resposta = window.confirm("Deseja continuar?");
+        }
+    </script>
+</body>
+
+</html>
