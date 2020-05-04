@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Exemplo 37 - Página 2</title>
+    <script>
+        function passarNome() {
+            opener.document.getElementById('nome').value = document.getElementById('nome').options[document.getElementById('nome').selectedIndex].value;
+        }
+    </script>
+</head>
+
+<body>
+    <form id="f1" method="post" action="">
+        <p><label for="nome">Nomes:</label>
+            <select id="nome" onclick="passarNome();" onchange="window.close();">
+            <option value="0">Selecione o Nome</option>
+            <option value="José Maria">José Maria</option>
+            <option value="Maria da Conceição">Maria da Conceição</option>
+            <option value="Mariana da Costa">Mariana da Costa</option>
+            <option value="Gabriel Duarte">Gabriel Duarte</option>
+            <option value="Maria Fernanda">Maria Fernanda</option>
+         </select></p>
+    </form>
+</body>
+
+</html>
