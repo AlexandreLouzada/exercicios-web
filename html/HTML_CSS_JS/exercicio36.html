@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Exemplo 36</title>
+    <script>
+        function abrirJanela() {
+            janela = window.open("http://www.google.com.br", "Google", "width=400; height=300; top=0; left=0; scrollbars=yes");
+        }
+    </script>
+</head>
+
+<body>
+    <form id="f1" method="post" action="">
+        <p><input type="button" value="Abrir Janela" onclick="abrirJanela();"></p>
+        <p><input type="button" value="Fechar Janela" onclick="janela.close();"></p>
+    </form>
+</body>
+
+</html>
