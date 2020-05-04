@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Exemplo 24</title>
+</head>
+
+<body>
+    <script>
+        var palavra = window.prompt("Digite uma palavra:", "");
+        var i, qtd = palavra.length;
+        var vogais = 0;
+
+        for (i = 0; i < qtd; i++) {
+            switch (palavra.charAt(i)) {
+                case 'a':
+                case 'e':
+                case 'i':
+                case 'o':
+                case 'u':
+                    vogais++;
+            }
+        }
+
+        document.write("A palavra " + palavra + " possui " + vogais + " vogais em minúsculas");
+    </script>
+</body>
+
+</html>
