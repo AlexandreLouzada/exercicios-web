@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Exemplo 35</title>
+    <script>
+        function selecionarCapital() {
+            document.getElementById('capital').value = document.getElementById('estado').options[document.getElementById('estado').selectedIndex].value;
+        }
+    </script>
+</head>
+
+<body>
+    <form id="f1" method="post" action="">
+        <p><label for="estado">Estado:</label>
+            <select id="estado" onclick="selecionarCapital();">
+            <option value="0">Selecione o Estado</option>
+            <option value="Vitória">Espírito Santo</option>
+            <option value="Belo Horizonte">Minas Gerais</option>
+            <option value="Rio de Janeiro">Rio de Janeiro</option>
+            <option value="São Paulo">São Paulo</option>
+         </select></p>
+
+        <p><label for="capital">Capital:</label>
+            <input type="text" id="capital" /></p>
+    </form>
+</body>
+
+</html>
