@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Exemplo 18</title>
+    <script>
+        function calcularFatorial(x) {
+            var c, f = 1;
+
+            for (c = x; c >= 1; c--)
+                f *= c;
+
+            return f;
+        }
+    </script>
+</head>
+
+<body>
+    <script type="text/javascript">
+        var i = 1;
+
+        do {
+            document.write("O fatorial de " + i + " é " + calcularFatorial(i) + "<br />");
+            i++;
+        } while (i <= 15);
+    </script>
+</body>
+
+</html>
