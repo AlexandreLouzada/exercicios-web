@@ -8,15 +8,15 @@
 
 <body>
     <script>
-        var nd = window.prompt("Digite um número entre 1 e 5:", "");
-        var ns = Math.round(Math.random() * 4 + 1);
+        var numero_digitado = window.prompt("Digite um número entre 1 e 5:", "");
+        var numero_sorteado = Math.round(Math.random() * 4 + 1);
 
-        nd = Number(nd);
+        numero_digitado = Number(numero_digitado);
 
-        if (nd == ns)
+        if (numero_digitado == numero_sorteado)
             document.write("Você acertou!!!");
         else
-            document.write("Você errou, o número sorteado foi " + ns + "!");
+            document.write("Você errou, o número sorteado foi " + numero_sorteado + "!");
     </script>
 </body>
 
