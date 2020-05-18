@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Exemplo 46</title>
+    <script>
+        function atualizar() {
+            var data = new Date();
+            var hora = data.getHours();
+            var min = data.getMinutes();
+            var seg = data.getSeconds();
+
+            if (hora < 10)
+                hora = "0" + hora;
+
+            if (min < 10)
+                min = "0" + min;
+
+            if (seg < 10)
+                seg = "0" + seg;
+
+            document.getElementById('horas').value = hora + ":" + min + ":" + seg;
+        }
+
+        window.setInterval("atualizar()", 1000);
+    </script>
+</head>
+
+<body>
+    <form id="f1" method="post" action="">
+        <input type="text" id="horas" />
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Exemplo 47</title>
+    <script>
+        var mensagem = "Aprender programação é construir o futuro! ";
+        var primeira, resto;
+
+        function exibirMensagem() {
+            document.getElementById('visor').value = mensagem;
+            primeira = mensagem.charAt(0);
+            resto = mensagem.substring(1, mensagem.length);
+            mensagem = resto + primeira;
+        }
+
+        window.setInterval("exibirMensagem()", 100);
+    </script>
+</head>
+
+<body>
+    <form id="f1" method="post" action="">
+        <input type="text" id="visor" size="40" />
+    </form>
+</body>
+
+</html>

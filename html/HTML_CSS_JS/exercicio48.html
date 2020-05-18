@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Exemplo 48</title>
+    <script>
+        function exibirTexto() {
+            if (document.getElementById("botao").value == "Exibir texto") {
+                document.getElementById("texto").style.visibility = "visible";
+                document.getElementById("texto").style.display = "block";
+                document.getElementById("botao").value = "Ocultar texto";
+            } else {
+                document.getElementById("texto").style.visibility = "hidden";
+                document.getElementById("texto").style.display = "none";
+                document.getElementById("botao").value = "Exibir texto";
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <form id="f1" method="post" action="">
+        <input type="button" id="botao" value="Exibir texto" onclick="exibirTexto();" />
+    </form>
+
+    <div id="texto" style="visibility: hidden; display: none;">
+        <p>Se não houver frutos<br /> Valeu a beleza das flores</p>
+
+        <p>Se não houver flores<br /> Valeu a sombra das folhas</p>
+
+        <p>Se não houver folhas<br /> Valeu a intenção da semente</p>
+
+        <p>Henfil</p>
+    </div>
+</body>
+
+</html>

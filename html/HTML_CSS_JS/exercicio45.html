@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Exemplo 45</title>
+    <script>
+        var vetor = new Array(5);
+        var i = 0;
+
+        vetor[0] = "figura1.jpg";
+        vetor[1] = "figura2.jpg";
+        vetor[2] = "figura3.jpg";
+        vetor[3] = "figura4.jpg";
+        vetor[4] = "figura5.jpg";
+
+        function trocar() {
+            i++;
+            document.getElementById('imagem').src = vetor[i];
+
+            if (i == vetor.length - 1)
+                i = -1;
+        }
+
+        window.setInterval("trocar()", 3000);
+    </script>
+</head>
+
+<body>
+    <img src="figura1.jpg" id="imagem" />
+</body>
+
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Exemplo 44</title>
+    <script>
+        var vetor = new Array(5);
+        var i = 0;
+
+        vetor[0] = "figura1.jpg";
+        vetor[1] = "figura2.jpg";
+        vetor[2] = "figura3.jpg";
+        vetor[3] = "figura4.jpg";
+        vetor[4] = "figura5.jpg";
+
+        function proxima() {
+            i++;
+            document.getElementById('imagem').src = vetor[i];
+
+            document.getElementById('pri').disabled = false;
+            document.getElementById('ant').disabled = false;
+
+            if (i == vetor.length - 1) {
+                document.getElementById('pro').disabled = true;
+                document.getElementById('ult').disabled = true;
+            }
+        }
+
+        function anterior() {
+            i--;
+            document.getElementById('imagem').src = vetor[i];
+
+            document.getElementById('pro').disabled = false;
+            document.getElementById('ult').disabled = false;
+
+            if (i == 0) {
+                document.getElementById('pri').disabled = true;
+                document.getElementById('ant').disabled = true;
+            }
+        }
+
+        function primeira() {
+            i = 0;
+            document.getElementById('imagem').src = vetor[i];
+
+            document.getElementById('pro').disabled = false;
+            document.getElementById('ult').disabled = false;
+
+            if (i == 0) {
+                document.getElementById('pri').disabled = true;
+                document.getElementById('ant').disabled = true;
+            }
+        }
+
+        function ultima() {
+            i = vetor.length - 1;
+            document.getElementById('imagem').src = vetor[i];
+
+            document.getElementById('pri').disabled = false;
+            document.getElementById('ant').disabled = false;
+
+            if (i == vetor.length - 1) {
+                document.getElementById('pro').disabled = true;
+                document.getElementById('ult').disabled = true;
+            }
+        }
+    </script>
+</head>
+
+<body onload="document.getElementById('pri').disabled = true; document.getElementById('ant').disabled = true;">
+    <img src="figura1.jpg" id="imagem" />
+
+    <form id="f1" method="post" action="">
+        <input type="button" id="pri" value="<" onclick="primeira();" />
+        <input type="button" id="ant" value="<<" onclick="anterior();" />
+        <input type="button" id="pro" value=">>" onclick="proxima();" />
+        <input type="button" id="ult" value=">" onclick="ultima();" />
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Exemplo 50</title>
+    <script type="text/javascript" src="Exemplo49.js"></script>
+</head>
+
+<body>
+    <script>
+        var raio = window.prompt("Digite o valor do raio em cm:", "");
+        var altura = window.prompt("Digite o valor da altura em cm:", "");
+
+        raio = Number(raio);
+        altura = Number(altura);
+
+        var volume = Math.PI * calcularQuadrado(raio) * altura;
+
+        document.write("O volume da lata é " + volume + "cm<sup>3</sup>");
+    </script>
+</body>
+
+</html>
