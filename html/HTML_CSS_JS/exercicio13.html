@@ -8,13 +8,14 @@
 
 <body>
     <script>
-        var nome = window.prompt("Digite o seu nome:", "");
-        var sexo = window.prompt("Digite o seu sexo:", "");
+        // var nome = window.prompt("Digite o seu nome:", "");
+        var nome = "Lindomar"
+        var sexo = "M"
+            //window.prompt("Digite o seu sexo: ", "");
 
         if ((sexo == "M") || (sexo == "m"))
-            document.write("Seja bem vindo " + nome + " vc é maior de idade");
-        else
-        if ((sexo == "F") || (sexo == "f"))
+            document.writeln("Seja bem vindo " + nome);
+        else if ((sexo == "F") || (sexo == "f"))
             document.write("Seja bem vinda " + nome);
         else
             document.write("Seja bem vindo(a) " + nome);
