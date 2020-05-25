@@ -8,9 +8,14 @@
 
 <body>
     <script>
-        var contador;
-
-        for (contador = 1; contador <= 5; contador++)
-            document.writeln("<br> " + ++contador);
+        var contador, salário, media, total = 0;
+        for (contador = 1; contador <= 3; contador++) {
+            salário = window.prompt("Digite o salário do funcionário", "");
+            salário = Number(salário);
+            total += salário;
+        }
+        media = total / 3
+        document.write("<br> " + "Total da folha de pagamento = " + total);
+        document.write("<br> " + "Média salarial = " + media);
     </script>
 </body>
