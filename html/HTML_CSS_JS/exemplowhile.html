@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Exemplo while</title>
+</head>
+
+<body>
+    <script>
+        var par, impar, i = 1;
+        par = impar = 0;
+        while (i < 10) {
+            if (i % 2 == 0)
+                par++;
+            else impar++;
+            document.write("<br>" + i++);
+        }
+        document.write("<br>" + "Quantidade de pares: " + par);
+        document.write("<br>" + "Quantidade de ímpares: " + impar);
+    </script>
+</body>
+
+</html>
