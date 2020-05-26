@@ -8,14 +8,14 @@
 
 <body>
     <script>
-        var par, impar, i = 1;
+        var par, impar, número = 1;
         par = impar = 0;
         do {
-            if (i % 2 == 0)
+            if (número % 2 == 0)
                 par++;
             else impar++;
-            document.write("<br>" + i++);
-        } while (i < 10);
+            document.write("<br>" + número++);
+        } while (número < 10);
         document.write("<br>" + "Quantidade de pares: " + par);
         document.write("<br>" + "Quantidade de ímpares: " + impar);
     </script>
