@@ -8,14 +8,15 @@
 
 <body>
     <script>
-        var contador, salário, media, total = 0;
-        for (contador = 1; contador <= 3; contador++) {
-            salário = window.prompt("Digite o salário do funcionário", "");
-            salário = Number(salário);
-            total += salário;
+        var contador, preço, media, total = 0;
+        var base = 3;
+        for (contador = 1; contador <= base; contador++) {
+            preço = window.prompt("Digite o preço do produto", "");
+            preço = Number(preço);
+            total += preço;
         }
-        media = total / 3
-        document.write("<br> " + "Total da folha de pagamento = " + total);
-        document.write("<br> " + "Média salarial = " + media);
+        media = total / base
+        document.write("<br> " + "Total a pagar = " + total);
+        document.write("<br> " + "Valor médio   = " + media);
     </script>
 </body>
