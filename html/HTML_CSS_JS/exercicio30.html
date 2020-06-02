@@ -9,19 +9,19 @@
 <body>
     <table border>
         <script>
-            var i, j;
-            var tabela = new Array(3);
+            var linha, coluna;
+            var tabela = new Array(2);
 
-            tabela[0] = new Array(4);
-            tabela[1] = new Array(4);
-            tabela[2] = new Array(4);
+            tabela[0] = new Array(2);
+            tabela[1] = new Array(2);
 
-            for (i = 0; i <= 2; i++) {
+
+            for (linha = 0; linha < 2; linha++) {
                 document.write("<tr>");
 
-                for (j = 0; j <= 3; j++) {
-                    tabela[i][j] = window.prompt("Digite um número:", "");
-                    document.write("<td>" + tabela[i][j] + "</td>");
+                for (coluna = 0; coluna < 2; coluna++) {
+                    tabela[linha][coluna] = window.prompt("Digite um número:", "");
+                    document.write("<td>" + tabela[linha][coluna] + "</td>");
                 }
 
                 document.write("<tr>");
