@@ -1,0 +1,84 @@
+  body {
+      background-color: #CCCCCC;
+  }
+  
+  div#conteudo {
+      background-color: #EEEEBB;
+      padding: 10px;
+      text-align: center;
+      width: 93%;
+      max-width: 300px;
+      margin: 0 auto;
+  }
+  
+  input#visor1 {
+      width: 90%;
+      height: 75px;
+      border: black 1px solid;
+      /* border-radius: 10px; */
+      font-family: courier new;
+      font-size: 30pt;
+      font-weight: bold;
+      text-align: center;
+      background-color: black;
+      color: red;
+  }
+  
+  input#visor2 {
+      width: 90%;
+      height: 25px;
+      border: black 1px solid;
+      font-family: courier new;
+      font-size: 15pt;
+      text-align: center;
+      background-color: black;
+      color: white;
+  }
+  
+  input#botaoA {
+      width: 45%;
+      height: 100px;
+      background-color: red;
+      border: black 1px solid;
+      font-size: 24pt;
+      color: white;
+  }
+  
+  input#botaoB {
+      width: 45%;
+      height: 100px;
+      background-color: yellow;
+      border: black 1px solid;
+      font-size: 24pt;
+      color: white;
+  }
+  
+  input#botaoC {
+      width: 45%;
+      height: 100px;
+      background-color: blue;
+      border: black 1px solid;
+      font-size: 24pt;
+      color: white;
+  }
+  
+  input#botaoD {
+      width: 45%;
+      height: 100px;
+      background-color: green;
+      border: black 1px solid;
+      font-size: 24pt;
+      color: white;
+  }
+  
+  input#reiniciar {
+      width: 90%;
+      height: 25px;
+      border: black 1px solid;
+      background-color: #CCCCCC;
+      font-size: 11pt;
+  }
+  
+  h1#titulo {
+      font-family: verdana;
+  }
