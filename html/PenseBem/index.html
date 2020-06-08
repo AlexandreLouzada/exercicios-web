@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <script src="funcoes.js"></script>
+    <title>Simulador de Pense Bem</title>
+</head>
+
+<body onload="iniciar();">
+    <div id="conteudo">
+        <h1 id="titulo">Pense Bem</h1>
+
+        <form>
+            <p><input type="text" id="visor1" value="*" readonly></p>
+            <p><input type="text" id="visor2" readonly></p>
+
+            <p>
+                <input type="button" id="botaoA" value="A" onclick="jogar(this.value);">
+                <input type="button" id="botaoB" value="B" onclick="jogar(this.value);">
+                <input type="button" id="botaoC" value="C" onclick="jogar(this.value);">
+                <input type="button" id="botaoD" value="D" onclick="jogar(this.value);">
+            </p>
+
+            <p><input type="button" id="reiniciar" value="Reiniciar Jogo" onclick="iniciar();"></p>
+        </form>
+    </div>
+</body>
+
+</html>
