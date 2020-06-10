@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+}
+
+@keyframes expand {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1.5em);
+    }
+}
+
+#loader-conteiner {
+    position: absolute;
+    background-color: rgba(51, 51, 51, 0.5);
+    display: flex;
+    min-height: 100vh;
+    min-width: 100vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader1,
+.loader2,
+.loader3 {
+    height: 1.5em;
+    width: 1.5em;
+    background-color: white;
+    border-radius: 50%;
+    margin: 1em;
+    animation-fill-mode: both;
+    box-shadow: 0 0 0 1px #333;
+}
+
+.loader1 {
+    animation: expand 1.25s infinite ease-in-out .45s;
+}
+
+.loader2 {
+    animation: expand 1.25s infinite ease-in-out .3s;
+}
+
+.loader3 {
+    animation: expand 1.25s infinite ease-in-out .15s;
+}
