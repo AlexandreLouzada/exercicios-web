@@ -5,6 +5,13 @@
     "version": "0.2.0",
     "configurations": [
         
+        {
+            "name": "(Windows) Anexar",
+            "type": "cppvsdbg",
+            "request": "attach",
+            "processId": "${command:pickProcess}"
+        },
+        
         
         {
             "name": "Python: Arquivo Atual",
